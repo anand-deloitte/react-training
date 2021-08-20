@@ -1,38 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 .App {
   text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    filter: hue-rotate(270deg);
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000;
+  min-height: 25vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+button {
+  background: #F2A71B;
+  padding: 10px;
+  font-family: 'Bowlby One SC', cursive;
 
-.App-link {
-  color: #61dafb;
 }
-
+nav.font {
+  font-size: 24px;
+  /* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+}
+.App-link {
+  /* color: #61dafb; */
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  padding: 0 5px;
+  -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+.App-link:hover {
+  background: #7AD836;
+background: -webkit-linear-gradient(top right, #7AD836, #344633);
+background: -moz-linear-gradient(top right, #7AD836, #344633);
+background: linear-gradient(to bottom left, #7AD836, #344633);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+    filter: hue-rotate(270deg);
   }
 }
+
+ .font {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 18px;
+ }
+ .vdom {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+ }
+header{
+  color: #fff;
+  flex: 0 1 auto;
+}
+.main-container {
+  min-height: 40vh;
+  background: #38D0F2;
+  flex: 1 1 auto;
+}
+footer{
+  background: #F2A71B;
+  flex: 0 1 40px;
+}
+ 
